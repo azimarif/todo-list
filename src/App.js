@@ -3,6 +3,7 @@ import './App.css';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import TodoContext from './context/TodoContext';
 import TodoList from './pages/TodoList'
+import PendingTasks from './pages/PendingTasks'
 
 class App extends React.Component {
 
@@ -57,6 +58,7 @@ class App extends React.Component {
         <HashRouter basename='/'>
           <Switch>
             <Route path='/' component={TodoList} exact />
+            <Route path='/pending' component={PendingTasks} exact />
           </Switch>
         </HashRouter>
       </TodoContext.Provider>
