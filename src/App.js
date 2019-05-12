@@ -4,6 +4,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import TodoContext from './context/TodoContext';
 import TodoList from './pages/TodoList'
 import PendingTasks from './pages/PendingTasks'
+import CompletedTasks from './pages/CompletedTasks'
 
 class App extends React.Component {
 
@@ -59,6 +60,7 @@ class App extends React.Component {
           <Switch>
             <Route path='/' component={TodoList} exact />
             <Route path='/pending' component={PendingTasks} exact />
+            <Route path='/completed' component={CompletedTasks} exact />
           </Switch>
         </HashRouter>
       </TodoContext.Provider>
