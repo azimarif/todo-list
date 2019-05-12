@@ -2,6 +2,7 @@ import React from 'react';
 import TodoContext from '../context/TodoContext'
 import Header from '../components/Header';
 import TodoHeader from '../components/TaskCountHeader';
+import AddTodo from '../components/AddTodo';
 
 class TodoList extends React.Component {
   render() {
@@ -11,6 +12,7 @@ class TodoList extends React.Component {
           (
             <React.Fragment>
               <Header />
+              <AddTodo addTodo={context.addTodo} updateInputValue={context.updateInputValue} />
               <TodoHeader count={context.todos.length} />
               {
                 context.todos.map(todo => {

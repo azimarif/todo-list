@@ -75,4 +75,16 @@ body {
   margin: 2%;
   width: 40%;
   height: 30%;
+  font-size: 1rem;
+}
+
+.btn {
+  width: 20%;
+  height: 40%;
+  font-size: 1rem;
+}
+
+.btn:hover{
+  background: #f2f2f2;
+  cursor: pointer;
 }
